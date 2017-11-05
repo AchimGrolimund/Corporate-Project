@@ -1,10 +1,15 @@
-language: cpp
-compiler: gcc
+# The Trusty beta Build Environment
+sudo: required
+dist: trusty
 
-before_install:
- - sudo apt-get update -qq
+install:
+  - sudo apt-get install -y qt5-default qttools5-dev-tools #install necessary Qt files
 
-before_script:
-  - mkdir build
-  - cd build
-  - cmake
+script:
+  - qmake Corporate_Project.pro #we gonna compile for Unit test first
+  - make
+  - ./Corporate_Project #run unit test
+  - rm Makefile Corporate_Project *.o #remove files (which are generated from unit test) for next build
+  - qmake "CONFIG+=debug" Corporate_Project.pro #we gonna compile for actual program
+  - make
+  - ./Corporate_Project #run actual program
