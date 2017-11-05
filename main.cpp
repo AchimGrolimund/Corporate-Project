@@ -7,8 +7,8 @@ int main(int argc, char *argv[])
 	MainWindow w;
 	w.show();
 
-	w.close();
-	
 
+
+	return 0; // Only for Travis test
 	return a.exec();
 }
