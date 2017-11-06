@@ -10,10 +10,11 @@ int main(int argc, char *argv[])
 	MainWindow w;
 	w.show();
 
-	matheLogical ml;
+
+	Travis_Logic *TL = new Travis_Logic;
+	delete TL;
 
 
-	return ml.test_addition(2,2) == 4 ? 0 : 1;
 
 	return a.exec();
 }

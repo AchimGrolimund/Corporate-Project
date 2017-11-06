@@ -7,7 +7,7 @@ class Travis_Logic
 	public:
 		Travis_Logic();
 		~Travis_Logic();
-		bool closeAppWith code();
+
 
 };
 
