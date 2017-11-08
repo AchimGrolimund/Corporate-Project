@@ -1,6 +1,7 @@
 #ifndef TRAVIS_LOGIC_H
 #define TRAVIS_LOGIC_H
 
+#include "mathelogical.h"
 
 class Travis_Logic
 {
