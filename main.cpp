@@ -1,8 +1,7 @@
 #include "mainwindow.h"
 #include <QApplication>
-#include "mathelogical.h"
+#include "settingsmanager.h"
 
-#include "travis_logic.h" // Logikaufbau für Travis um die Funktionen zu testen
 
 int main(int argc, char *argv[])
 {
@@ -11,8 +10,10 @@ int main(int argc, char *argv[])
 	w.show();
 
 
-	Travis_Logic *TL = new Travis_Logic;
-	delete TL;
+	settingsManager settings;
+	settings.setUsername();
+
+
 
 
 

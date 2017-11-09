@@ -26,13 +26,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    travis_logic.cpp \
-    mathelogical.cpp
+    settingsmanager.cpp
 
 HEADERS += \
         mainwindow.h \
-    travis_logic.h \
-    mathelogical.h
+    settingsmanager.h
 
 FORMS += \
         mainwindow.ui
